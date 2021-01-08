@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Coding Quiz</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+        <a id="highscore" href="highscore.html">View highscores</a>
+        <h1 id="quizTitle">Tame Impala Quiz</h1>
+        <p id="timer">Time: </p>
+    </header>
+    <div class="card">
+        <div class="card-header">
+            <h2>Click start button to begin quiz</h2>
+        </div>
+        <div class="card-body">
+            <textarea 
+                readonly
+                id="question"
+                aria-label="Questions displayed here"
+            ></textarea>
+            <button id="btnStart" class="btn">Start!</button>
+        </div>
+    </div>
+  </div>
+<script src="assets/js/questions.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
