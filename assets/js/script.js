@@ -15,6 +15,6 @@ var timerFunc = setInterval(function(){
 
     if (secRemaining === 0) {
         clearInterval(timerFunc);
-        textBox.textContent = "Game Over :(";
+        textBox.textContent = "Game Over";
     }
 }, 1000);
