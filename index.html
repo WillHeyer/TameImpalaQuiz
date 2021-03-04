@@ -3,31 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Coding Quiz</title>
+    <link href="./style2.css" rel="stylesheet">
+    <script defer src="./script.js"></script>
+    <title>Tame Impala Quiz</title>
+
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-        <a id="highscore" href="highscore.html">View highscores</a>
-        <h1 id="quizTitle">Tame Impala Quiz</h1>
-        <p id="timer">Time: </p>
-    </header>
-    <div class="card">
-        <div class="card-header">
-            <h2>Click start button to begin quiz</h2>
+    <div class="upper-left">
+        <button class="scores" id="Highscores">View Highscores</button>
+
+        <div class="timer">Time: <span id="time">80</span></div>
+    </div>
+
+        <div class="starting-page start-btn">
+        <h1> Tame Impala Quiz Challenge</h1>
+        <p> Answer as many questions as you can!</p>
+    </div>
+
+    <div class="container" id="questionBox">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
         </div>
-        <div class="card-body">
-            <textarea 
-                readonly
-                id="question"
-                aria-label="Questions displayed here"
-            ></textarea>
-            <button id="btnStart" class="btn">Start!</button>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+
         </div>
     </div>
-  </div>
-<script src="assets/js/questions.js"></script>
-<script src="assets/js/script.js"></script>
+
+    <div class="end-screen">
+        <div id="game-over" class="hide">
+            <h2> Game Over </h2>
+        </div>
+
+    </div>
+
 </body>
 </html>

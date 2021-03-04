@@ -3,12 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>High Scores</title>
 </head>
 <body>
-    
-<script src="assets/js/questions.js"></script>
-<script src="assets/js/script.js"></script>
+    <div class="clearfix">
+        <div class="card">
+          <h2>All done!</h2>
+          <form method="POST">
+            <div class="input-group">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div class="input-group">
+              <label for="score">Score</label>
+              <input type="score" name="score" id="score">
+            </div>
+            <br>
+            <div id="msg"></div>
+            <button id="submit">Submit</button>
+          </form>
+        </div>
 </body>
 </html>

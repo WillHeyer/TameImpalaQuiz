@@ -1,0 +1,149 @@
+* { 
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: black;
+    font-size: 50px;
+    text-shadow:  rgb(94, 187, 31);
+    font-stretch: expanded;
+    font-weight: bold;
+    position: relative;
+    bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+p { 
+    font-size: 17px;
+    color:black;
+    position:relative;
+    top: 15px;
+    text-align: center;
+    font-weight: bold;
+    text-align: left;
+    font-style: cursive;
+}
+
+.starting-page {
+    align-items: center;
+}
+
+body {
+padding: 0;
+margin: 0;
+display: flex;
+flex-direction: column;
+width: 100vw;
+height: 100vh;
+justify-content: center;
+align-items: center;
+background-color:  rgb(94, 187, 31);
+}
+
+.container {
+    width: 600px;
+    max-width: 80%;
+    background-color:  rgb(94, 187, 31);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 12px;
+    margin: 30px 0;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    cursor: pointer;
+    background-color: rgb(151, 150, 142);
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.btn:hover {
+    border-color:maroon;
+    border: 2px solid;
+}
+
+.btn.correct {
+    background-color: green;
+}
+
+.btn.wrong {
+    background-color: red;
+
+}
+
+.start-btn {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 15px;
+
+}
+
+.controls {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.hide {
+    display:none;
+}
+
+.upper-left {
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    margin: 8px;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(94, 187, 31);
+}
+
+.scores {
+    background-color rgb(94, 187, 31);
+    border: 15x solid black;
+    position:relative;
+    left: 0px;
+    top: -3px;
+    font-weight: bold;
+}
+
+.outer-container {
+    margin: 20px;
+}
+
+.question {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.starting-page {
+    background-color: rgb(94, 187, 31);
+    max-width:900px;
+    position:relative;
+    bottom: 60px;
+    height:150px;
+}
+
+h2 {
+    position:relative;
+    bottom:37px;
+}
+
+.end-screen {
+    background-color: rgb(94, 187, 31);
+    font-size: 30px;
+    font-weight: bold;
+}
